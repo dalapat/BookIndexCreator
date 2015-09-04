@@ -1,0 +1,11 @@
+Based on the results I achieved by timing the code for BookIndexSplay and BookIndexCreator,
+the splay tree is faster than the binary search tree for files where access of the same node
+occurs frequently. In the challenge.txt that I wrote, there were several lines that
+were specially designed favor the Splay tree over the standard binary search tree. These lines
+are those that are repeated or values that were closely clustered together. This would provide
+a greater benefit to a splay tree because a splay tree modifies itself in order to accomodate
+nodes that are frequently accessed. It pushes nodes that are accessed more frequently
+(and anything around those nodes) towards the top so that the number of steps to find the node
+in the tree is less. The timings for each the splay tree and the Binary Search tree can be seen
+in the code (they are printed out). The timings for the BST are 22947083 nanoseconds and 18477053 
+nanoseconds for the splay tree.
